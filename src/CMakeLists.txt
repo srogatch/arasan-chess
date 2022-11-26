@@ -141,6 +141,7 @@ if(NUMA)
     set(EXE_NAME ${EXE_NAME}-numa)
 endif(NUMA)
 
+set(ARASAN_EXE_NAME ${EXE_NAME})
 set(ARASAN_EXE_NAME ${EXE_NAME} PARENT_SCOPE)
 
 add_executable (${EXE_NAME} arasanx.cpp attacks.cpp attacks.h bench.h
